@@ -16,7 +16,7 @@ from langchain_community.llms import CTransformers
 ##response from llama2 model
 def getLLamaresponse(input_text, no_words, blog_style):
     llm = CTransformers(
-        model='Models\\llama-2-7b.ggmlv3.q8_0.bin',
+        model='Model\\llama-2-7b.ggmlv3.q8_0.bin',
         model_type='llama',
         config={'max_new_tokens': 256, 'temperature': 0.01}
     )
